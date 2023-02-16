@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.task {
+    width: 800px;
+    height: 600px;
+}

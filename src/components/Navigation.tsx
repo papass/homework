@@ -20,6 +20,16 @@ export function Navigation () {
                 <NavDropdown.Item as={Link} to={'/task4'}>Задание 1</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to={'/task5'}>Задание 2</NavDropdown.Item>
             </NavDropdown>
+            <NavDropdown title="Практическая 5" id="nav-dropdown-5">
+                <NavDropdown.Item as={Link} to={'/task6'}>Задание 1</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to={'/task7'}>Задание 2</NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Практическая 6" id="nav-dropdown-6">
+                <NavDropdown.Item as={Link} to={'/task8'}>Задание 1</NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Практическая 7" id="nav-dropdown-6">
+                <NavDropdown.Item as={Link} to={'/task9'}>Задание 1</NavDropdown.Item>
+            </NavDropdown>
         </Nav>
     )
 }

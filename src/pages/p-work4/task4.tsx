@@ -1,11 +1,11 @@
 import Form from 'react-bootstrap/Form'
-import { useMemo, useState } from 'react';
-import { MyVerticallyCenteredModal } from '../components/Modal';
+import { useMemo, useState} from 'react';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Popover from 'react-bootstrap/Popover';
+import Image from 'react-bootstrap/Image'
 
-export function Task5 () {
+export function Task4 () {
     const [action, setAction] = useState<string>('');
-    const [modalShow, setModalShow] = useState(false);
-
     const getImage = useMemo(() => {
         switch(action) {
             case 'акита':
@@ -21,9 +21,19 @@ export function Task5 () {
         }
     } , [action]);
 
+    const popover = (
+        <Popover id="popover-basic">
+          <Popover.Header as="h3">{action}</Popover.Header>
+          <Popover.Body>
+            <Image fluid src={getImage}></Image>
+          </Popover.Body>
+        </Popover>
+      );
+
     return (
         <Form>
                 {['акита', 'аусси', "бордер-колли", "вельш-корги", "самоед"].map((type, index) => (
+                <OverlayTrigger trigger="focus" placement="right" overlay={popover}>
                     <div key={`default-${type}`} className="mb-3 w-25">
                         <Form.Check 
                         type="radio"
@@ -32,19 +42,11 @@ export function Task5 () {
                         id={`default-${type}`}
                         label={type}
                         value={type}
-                        onChange={e => {
-                            setAction(e.target.value)
-                            setModalShow(true)
-                        }}
+                        onChange={e => setAction(e.target.value)}
                     />
                 </div>
+                </OverlayTrigger>
                 ))}
-                <MyVerticallyCenteredModal
-                    show={modalShow}
-                    action = {action}
-                    getImage = {getImage}
-                    onHide={() => setModalShow(false)}
-                />
         </Form>
     )
 }

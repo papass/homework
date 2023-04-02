@@ -10,6 +10,9 @@ import { Task6 } from './pages/p-work5/task6';
 import { Task7 } from './pages/p-work5/task7';
 import { Task8 } from './pages/p-work6/task8';
 import { Task9 } from './pages/p-work7/task9';
+import { Task10 } from './pages/p-work8/task10';
+import { Task11 } from './pages/p-work9/task11';
+import { Task12 } from './pages/p-work9/task12';
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
         <Route path='/task7' element={<Task7 />}></Route>
         <Route path='/task8' element={<Task8 />}></Route>
         <Route path='/task9' element={<Task9 />}></Route>
+        <Route path='/task10' element={<Task10 />}></Route>
+        <Route path='/task11' element={<Task11 />}></Route>
+        <Route path='/task12' element={<Task12 />}></Route>
       </Routes>
     </>
   );

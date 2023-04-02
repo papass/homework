@@ -27,9 +27,17 @@ export function Navigation () {
             <NavDropdown title="Практическая 6" id="nav-dropdown-6">
                 <NavDropdown.Item as={Link} to={'/task8'}>Задание 1</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Практическая 7" id="nav-dropdown-6">
+            <NavDropdown title="Практическая 7" id="nav-dropdown-7">
                 <NavDropdown.Item as={Link} to={'/task9'}>Задание 1</NavDropdown.Item>
             </NavDropdown>
+            <NavDropdown title="Практическая 8" id="nav-dropdown-8">
+                <NavDropdown.Item as={Link} to={'/task10'}>Задание 1</NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Практическая 9" id="nav-dropdown-9">
+                <NavDropdown.Item as={Link} to={'/task11'}>Задание 1</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to={'/task12'}>Задание 2</NavDropdown.Item>
+            </NavDropdown>
+            
         </Nav>
     )
 }

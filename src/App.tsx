@@ -13,6 +13,11 @@ import { Task9 } from './pages/p-work7/task9';
 import { Task10 } from './pages/p-work8/task10';
 import { Task11 } from './pages/p-work9/task11';
 import { Task12 } from './pages/p-work9/task12';
+import { Task13 } from './pages/p-work10/task13';
+import { Task14 } from './pages/p-work11/task14';
+import { Task15 } from './pages/p-work11/task15';
+import { Task16 } from './pages/p-work12/task16';
+import { Task17 } from './pages/p-work13-14/task17';
 
 function App() {
   return (
@@ -31,6 +36,11 @@ function App() {
         <Route path='/task10' element={<Task10 />}></Route>
         <Route path='/task11' element={<Task11 />}></Route>
         <Route path='/task12' element={<Task12 />}></Route>
+        <Route path='/task13' element={<Task13 />}></Route>
+        <Route path='/task14' element={<Task14 />}></Route>
+        <Route path='/task15' element={<Task15 />}></Route>
+        <Route path='/task16' element={<Task16 />}></Route>
+        <Route path='/task17' element={<Task17 />}></Route>
       </Routes>
     </>
   );

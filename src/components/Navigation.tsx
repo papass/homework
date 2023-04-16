@@ -37,7 +37,19 @@ export function Navigation () {
                 <NavDropdown.Item as={Link} to={'/task11'}>Задание 1</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to={'/task12'}>Задание 2</NavDropdown.Item>
             </NavDropdown>
-            
+            <NavDropdown title="Практическая 10" id="nav-dropdown-10">
+                <NavDropdown.Item as={Link} to={'/task13'}>Задание 1</NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Практическая 11" id="nav-dropdown-11">
+                <NavDropdown.Item as={Link} to={'/task14'}>Задание 1</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to={'/task15'}>Задание 2</NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Практическая 12" id="nav-dropdown-12">
+                <NavDropdown.Item as={Link} to={'/task16'}>Задание 1</NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Item>
+                <Nav.Link eventKey="link-1" title="Практическая 13-14" as={Link} to={'/task17'}> Практическая 13-14</Nav.Link>
+            </Nav.Item>
         </Nav>
     )
 }

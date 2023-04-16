@@ -96,7 +96,7 @@ const getStudent = (student: string, val?: 1 | 2) => {
             type="string" 
             placeholder="Введите фамилию студента" 
             onChange={e => setAdded(e.target.value)}/>
-            <Button variant="outline-primary" onClick={() => getStudent(added)} className='mt-3'>Primary</Button>{' '}
+            <Button variant="outline-primary" onClick={() => getStudent(added)} className='mt-3'>Добавить</Button>{' '}
           </Row>
         </Form>
     )

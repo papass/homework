@@ -38,7 +38,6 @@
 }
 
 .nav {
-  height: 50px;
   display: flex;
   background-color: rgb(216, 211, 211);
   align-items: center;
